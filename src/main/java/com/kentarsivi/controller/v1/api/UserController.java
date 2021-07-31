@@ -87,7 +87,7 @@ public class UserController {
 
 		if (responseDocumentDtos.getSize() <= 0)
 			throw new DocumentNotFoundException("DOCUMENT NOT FOUND");
-
+		System.out.println("Hello World!");
 		return new ResponseEntity<Page<DocumentDto>>(responseDocumentDtos, HttpStatus.OK);
 	}
 
